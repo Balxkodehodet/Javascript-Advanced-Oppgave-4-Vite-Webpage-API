@@ -11,7 +11,7 @@ document.querySelector("#app").innerHTML = `
    <button id="submit" type="submit">Søk</button>
    </form>
    <div id="results"></div>
-   <button id="nxt">Neste side</button>
+   <button id="nxt"><a href="#bookform">Neste side</a></button>
   </div>
 `;
 
