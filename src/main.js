@@ -26,6 +26,9 @@ nxtBtn.classList.add("hidden");
 // Eventlistener for submit search
 bookForm.addEventListener("submit", async (e) => {
   e.preventDefault();
+  while (results.firstChild) {
+    results.removeChild(results.firstChild);
+  }
   try {
     const bookData = await getData(
       apiEndpoint + encodeURIComponent(inputBook.value)
